@@ -11,8 +11,71 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
+  <style>
+    .drink-image {
+      width: 100%;
+      height: auto;
+    }
+
+    table {
+      border: 1px solid #dee2e6;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+     text-align: center;
+  }
+  th {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #e2e6ea;
+  }
+   .table-sm th,
+   .table-sm td{
+    padding: 5px;
+  }
+
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  </style>
+  </head>
+
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <!-- Navbar Brand -->
+      <a class="navbar-brand" href="#">A Few Drinks</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
     <div class="container">
         <div class="row">
           <div class="col-sm-2">G</div>
@@ -24,7 +87,7 @@
         </div>
         <div class="row">
           <div class="col-md">Gin and Tonic</div>
-          <div class="col-md">Apple Cider</div>
+          <div class="col-md">Amaretto</div>
           <div class="col-md">Rum and Coke</div>
           <div class="col-md">Iced Tea</div>
           <div class="col-md">Kombucha</div>
@@ -39,5 +102,173 @@
     However, the drink names in the second row are longer and require more horizontal space. 
     As the window width decreases, the longer drink names cannot fit within their respective columns, causing them to wrap onto the next line, thus breaking the row. 
     Therefore, the drink names break first due to their length and the limited horizontal space available.</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src = "Iced Tea.jpg" alt="Iced Tea" class="img-fluid drink-image">
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src = "Kombucha.jpg" alt="Kombucha" class="img-fluid drink-image">
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src = "Rum and Coke.jpg" alt="Rum and Coke" class="img-fluid drink-image">
+          </div>
+    </div>
+    <h2>Thumbnail Image</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Iced Tea.jpg" alt="Iced Tea" class="img-thumbnail drink-image">
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="Kombucha.png" alt="Kombucha" class="img-thumbnail drink-image">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="Rum and Coke.jpg" alt="Rum and Coke" class="img-thumbnail drink-image">
+            </div>
+          </div>
+          </div>
+       </div>
+          <div class="container">
+            <h2>Table</h2>
+            <table class="table table-bordered table-striped table-hover table-sm">
+              <caption class="text-muted">Beverages, Stars, and Fish</caption>
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Letter</th>
+                  <th scope="col">Drink</th>
+                  <th scope="col">Star Name</th>
+                  <th scope="col">Fish</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <th scope="row">G</th>
+                  <td>Gin and Tonic</td>
+                  <td>Gienah</td>
+                  <td>Galjoen fish</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">A</th>
+                  <td>Amaretto</td>
+                  <td>Altair</td>
+                  <td>Angelfish</td>
+                </tr>
+                <tr class="table-success">
+                  <th scope="row">R</th>
+                  <td>Rum and Coke</td>
+                  <td>Revati</td>
+                  <td>Red mullet</td>
+                </tr>
+                <tr class="table-primary">
+                  <th scope="row">I</th>
+                  <td>Iced Tea</td>
+                  <td>Irena</td>
+                  <td>Iridescent Shark</td>
+                </tr>
+                <tr class="table-secondary">
+                  <th scope="row">K</th>
+                  <td>Kombucha</td>
+                  <td>Kaletoo</td>
+                  <td>Kelpfish</td>
+                </tr>
+                <tr class="table-info">
+                  <th scope="row">I</th>
+                  <td>Irish Coffee</td>
+                  <td>Intercrus</td>
+                  <td>Inexpectatum Pleco</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn-toolbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-success">G</button>
+                <button type="button" class="btn btn-success">A</button>
+                <button type="button" class="btn btn-success">R</button>
+            </div>   
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning">I</button>
+                <button type="button" class="btn btn-warning">K</button>
+            </div>
+            <div class="btn-group"><button type="button" class="btn btn-danger">I</button></div>
+          </div>
+          <br>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Page
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="basic.html">Basic page</a></li>
+              <li><a class="dropdown-item" href="advance.html">Advance page</a></li>
+              
+            </ul>
+          </div>   
+          <div class="container mt-5">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="drink">Drink</label>
+                    <input type="text" class="form-control" id="drink" placeholder="Enter your drink">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+        </div>  
+        <div class="container mt-5">
+          <div class="row">
+            
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="Iced Tea.jpg" class="card-img-top" alt="Iced Tea">
+                      <div class="card-body">
+                          <h5 class="card-title">Iced Tea</h5>
+                          <p class="card-text">Iced tea is a form of cold tea. Though it is usually served in a glass with ice, it can refer to any tea that has been chilled or cooled. It may be sweetened with sugar or syrup.</p>
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="Kombucha.png" class="card-img-top" alt="Kombucha">
+                      <div class="card-body">
+                          <h5 class="card-title">Kombucha</h5>
+                          <p class="card-text">Kombucha is a fermented, lightly effervescent, sweetened black tea drink.</p>
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="Rum and Coke.jpg" class="card-img-top" alt="Rum and Coke">
+                    <div class="card-body">
+                        <h5 class="card-title">Rum and Coke</h5>
+                        <p class="card-text">Rum and Coke, or the Cuba libre, is a highball cocktail consisting of cola, rum, and in many recipes lime juice on ice.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </body>
+  </body>
+  </html>
+
+         
 </body>
 </html>
